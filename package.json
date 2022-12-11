@@ -1,7 +1,7 @@
 {
-  "name": "./react-glass-surface",
+  "name": "react-glass-surface",
   "version": "1.0.0",
-  "description": "./react-glass-surface React component",
+  "description": "A Glass/Glassmorphism surface container for React",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -28,10 +28,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "author": "",
+  "author": "Jannik Janket",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": "react-glass-surface",
   "keywords": [
     "react-component"
   ]
