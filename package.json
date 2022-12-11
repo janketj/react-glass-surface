@@ -1,6 +1,6 @@
 {
   "name": "react-glass-surface",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Glass/Glassmorphism surface container for React",
   "main": "lib/index.js",
   "module": "es/index.js",
