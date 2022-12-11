@@ -60,7 +60,6 @@ boxShadow: ?string = 'none'
 className: ?string = ''
 
 style: ?Object = {}
-
 ```
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
