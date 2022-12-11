@@ -10,7 +10,7 @@ export default class Demo extends Component {
     return (
       <div className='demo'>
         <div className='mockpage'>
-          <Glass className='glass' borderRadius='16px' style={{ width: '800px', height: '300px' }}>
+          <Glass className='glass' style={{ width: '800px', height: '300px' }}>
           </Glass>
           <div style={{ height: '300px', padding: '20px' }}>
             <p className='title'>

@@ -3,28 +3,33 @@ import React from 'react'
 import './Glass.css'
 
 const Glassmorphism = ({
-  background = 'rgba(255, 255, 255, 0.2)',
-  border = 'none',
-  borderRadius = '0px',
-  boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)',
+  background = null,
+  border = null,
+  borderRadius = null,
+  boxShadow = null,
   className,
   children,
-  style,
+  style = {},
   ...props
-}) => (
-  <div
-    {...props}
-    style={{
-      background,
-      border,
-      borderRadius,
-      boxShadow,
-      ...style,
-    }}
-    className={`gls ${className ?? ''}`}
-  >
-    {children}
-  </div>
-)
+}) => {
+  const inlineStyle = {
+    ...(!!background && { background }),
+    ...(!!border && { border }),
+    ...(!!borderRadius && { borderRadius }),
+    ...(!!boxShadow && { boxShadow }),
+  }
+  return (
+    <div
+      {...props}
+      style={{
+        ...style,
+        ...inlineStyle,
+      }}
+      className={`gls ${className ?? ''}`}
+    >
+      {children}
+    </div>
+  )
+}
 
 export default Glassmorphism

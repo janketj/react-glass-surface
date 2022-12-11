@@ -30,5 +30,6 @@
 
 .glass {
   position: fixed;
-  left: calc(50% - 400px)
+  left: calc(50% - 400px);
+  border-radius: 16px;
 }
